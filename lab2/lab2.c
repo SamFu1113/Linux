@@ -5,7 +5,7 @@
 
 
 
-#define __NR_newSystemcall 443
+#define __NR_newSystemcall 441
 
 struct data_segment{
 	unsigned long start_code;
