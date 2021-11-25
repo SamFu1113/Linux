@@ -16,7 +16,33 @@ several of them using the Restructured Text markup notation.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+-------------------------------------------------------------------
+In the linux-5.8.1 directory
+# vim linux-5.8.1/Makefile
+in line 1073
+(add newSystemcall/)
+kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ newSystemcall/
 
+# vim linux-5.8.1/include/linux/syscalls.h
+add 
+asmlinkage long sys_newSystemcall(pid_t user_pid, void* __user user_address);
+before ##endif
+
+# vim linux-5.8.1/arch/x86/entry/syscalls/syscall_64.tbl
+(ID 440 is for sys_helloworld in my pc)
+441     common  newSystemcall                sys_newSystemcall
+
+
+My pc nproc is 8.
+
+
+"lab1" folder is in the home directory.
+"newSystemcall" folder is under the linux-5.8.1 directory.
+
+
+"pics" folder is the execution record.
+
+------------------------------------------------------------------
 
 
 ## 定义文件
