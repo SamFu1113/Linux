@@ -1425,4 +1425,5 @@ long compat_ksys_semtimedop(int semid, struct sembuf __user *tsems,
 			    const struct old_timespec32 __user *timeout);
 asmlinkage long sys_helloworld(void);
 asmlinkage long sys_newSystemcall(pid_t user_pid, void* __user user_address);
+asmlinkage long sys_getPhyAddr(unsigned long* initial, int len_vir, unsigned long* result, int len_phy);
 #endif
