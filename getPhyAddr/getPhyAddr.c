@@ -14,6 +14,7 @@ struct data_segment{
 static unsigned long *proc_data[MAX_PROC_SIZE];
 static unsigned long vaddr2paddr(unsigned long vaddr){
     pgd_t *pgd=NULL;
+    p4d_t *p4d=NULL;
     pud_t *pud=NULL;
     pmd_t *pmd=NULL;
     pte_t *pte=NULL;
@@ -28,8 +29,12 @@ static unsigned long vaddr2paddr(unsigned long vaddr){
         printk("not mapped in pgdn");
         return -1;
     }
-
-    pud = pud_offset(pgd, vaddr);
+    p4d = p4d_offset(pgd, vaddr);
+    if (p4d_none(*p4d) || p4d_bad(*p4d)){
+        printk("not mapped in p4dn");
+    	return -1;
+    }
+    pud = pud_offset(p4d, vaddr);
     //printk("pud_val = 0x%lxn", pud_val(*pud));
     if (pud_none(*pud)) {
         printk("not mapped in pudn");
@@ -57,7 +62,7 @@ static unsigned long vaddr2paddr(unsigned long vaddr){
     page_offset = vaddr & ~PAGE_MASK;
     paddr = page_addr | page_offset;
     printk("page_addr = %lx, page_offset = %lxn", page_addr, page_offset);
-        printk("vaddr = %lx, paddr = %lxn", vaddr, paddr);
+    printk("vaddr = %lx, paddr = %lxn", vaddr, paddr);
 
     return paddr;
 }
