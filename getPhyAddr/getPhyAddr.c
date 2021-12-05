@@ -49,7 +49,7 @@ static unsigned long vaddr2paddr(unsigned long vaddr){
         return -1;
     }
 
-    pte = pte_offset_kernel(pmd, vaddr);
+    pte = pte_offset_map(pmd, vaddr);
     //printk("pte_val = 0x%lxn", pte_val(*pte));
     //printk("pte_index = %lun", pte_index(vaddr));
     if (pte_none(*pte)) {
@@ -61,8 +61,8 @@ static unsigned long vaddr2paddr(unsigned long vaddr){
     page_addr = pte_val(*pte) & PAGE_MASK;
     page_offset = vaddr & ~PAGE_MASK;
     paddr = page_addr | page_offset;
-    printk("page_addr = %lx, page_offset = %lxn", page_addr, page_offset);
-    printk("vaddr = %lx, paddr = %lxn", vaddr, paddr);
+    //printk("page_addr = %lx, page_offset = %lxn", page_addr, page_offset);
+    //printk("vaddr = %lx, paddr = %lxn", vaddr, paddr);
 
     return paddr;
 }
@@ -76,9 +76,9 @@ SYSCALL_DEFINE4(getPhyAddr, unsigned long*, initial, int, len_vir, unsigned long
 		return -EFAULT;
 	}
 
-	printk("Content is %p\n", proc_data[0]);
-	printk("Content is %p\n", proc_data[1]);
-	printk("Content is %p\n", proc_data[2]);
+	//printk("Content is %p\n", proc_data[0]);
+	//printk("Content is %p\n", proc_data[1]);
+	//printk("Content is %p\n", proc_data[2]);
 
 	unsigned long *phy[len_phy];
 	int i=0;
