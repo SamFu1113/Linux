@@ -45,10 +45,12 @@ My pc nproc is 8.
 ------------------------------------------------------------------
 
 
-## 定义文件
-1、查看kernel版本，确定在哪里加入sys call
+## Define file
+1. Check the kernel version and determine where to add sys call
+```sh
 uname -r
-    5.11.0-27-generic
+```
+**5.11.0-27-generic**
 
 2、kernel保存在/usr/src
 cd /usr/src
