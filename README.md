@@ -10,7 +10,7 @@ Documentation/admin-guide/README.rst first.
 
     https://www.kernel.org/doc/html/latest/
 
-There are various text files in the Documentation/ subdirectory,
+&nbsp;&nbsp;&nbsp;&nbsp;There are various text files in the Documentation/ subdirectory,
 several of them using the Restructured Text markup notation.
 
 Please read the Documentation/process/changes.rst file, as it contains the
