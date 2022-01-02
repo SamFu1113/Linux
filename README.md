@@ -16,6 +16,7 @@ several of them using the Restructured Text markup notation.
 &nbsp;&nbsp;&nbsp;&nbsp;Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+
 -------------------------------------------------------------------
 In the linux-5.8.1 directory
 # vim linux-5.8.1/Makefile
