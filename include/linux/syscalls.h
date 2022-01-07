@@ -1427,4 +1427,7 @@ asmlinkage long sys_helloworld(void);
 asmlinkage long sys_newSystemcall(pid_t user_pid, void* __user user_address);
 asmlinkage long sys_getPhyAddr(unsigned long* initial, int len_vir, unsigned long* result, int len_phy);
 asmlinkage long sys_getContextSwitches(unsigned int *number_of_context_switches);
+asmlinkage long sys_getWaitQueue(pid_t user_pid, unsigned int *number_of_entering_a_wait_queue);
+
 #endif
+

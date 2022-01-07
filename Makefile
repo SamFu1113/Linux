@@ -1070,7 +1070,7 @@ export MODORDER := $(extmod-prefix)modules.order
 export MODULES_NSDEPS := $(extmod-prefix)modules.nsdeps
 
 ifeq ($(KBUILD_EXTMOD),)
-core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ mycall/ newSystemcall/ getPhyAddr/ getContextSwitches/
+core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ mycall/ newSystemcall/ getPhyAddr/ getContextSwitches/ getWaitQueue/
 
 vmlinux-dirs	:= $(patsubst %/,%,$(filter %/, \
 		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
