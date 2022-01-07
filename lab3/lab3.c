@@ -2,7 +2,7 @@
 #include <syscall.h>
 #include <unistd.h>
 
-#define NUMBER_OF_ITERATIONS 500
+#define NUMBER_OF_ITERATIONS 1000
 
 #define __NR_getContextSwitches 443
 
