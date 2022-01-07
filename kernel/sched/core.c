@@ -2554,6 +2554,9 @@ try_to_wake_up(struct task_struct *p, unsigned int state, int wake_flags)
 	/* We're going to change ->state: */
 	success = 1;
 
+	//Add the number of entering wait queue
+	p->enter_queue_count++;
+
 	/*
 	 * Ensure we load p->on_rq _after_ p->state, otherwise it would
 	 * be possible to, falsely, observe p->on_rq == 0 and get stuck
