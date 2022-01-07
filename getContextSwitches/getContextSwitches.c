@@ -5,12 +5,15 @@
 #include <linux/resource.h>
 #include <asm/errno.h>
 
-SYSCALL_DEFINE2(get_number_of_context_switches, pid_t, pid, unsigned int *, number_of_context_switches) {
+
+// asmlinkage long sys_getContextSwitches(pid_t user_pid, unsigned int* number_of_context_switches);
+
+SYSCALL_DEFINE1(getContextSwitches,  unsigned int *, number_of_context_switches) {
     struct task_struct *task;
     struct rusage ru;
     unsigned int ncsw;
-
-    task = find_task_by_vpid(pid);
+    task = current
+    //task = find_task_by_vpid(current->pid);
     if (!task) {
         return -ESRCH;
     }

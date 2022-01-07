@@ -363,8 +363,8 @@
 440     common  helloworld              sys_helloworld
 441     common  newSystemcall           sys_newSystemcall
 442     common  getPhyAddr              sys_getPhyAddr
-443	common	get_number_of_context_switches	sys_get_number_of_context_switches
-#
+443	common	getContextSwitches	sys_getContextSwitches
+
 # x32-specific system call numbers start at 512 to avoid cache impact
 # for native 64-bit operation. The __x32_compat_sys stubs are created
 # on-the-fly for compat_sys_*() compatibility system calls if X86_X32
