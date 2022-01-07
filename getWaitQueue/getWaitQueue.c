@@ -17,9 +17,8 @@ SYSCALL_DEFINE2(getWaitQueue, pid_t, pid, unsigned int *, number_of_entering_a_w
     }
 
     printk("---\n");
-    printk("task->enter_queue_count: %d\n", task->
-    );
-    newq = task->current_enter_queue_count;
+    printk("task->enter_queue_count: %d\n", task->enter_queue_count);
+    newq = task->enter_queue_count;
 
 
     if (copy_to_user(number_of_entering_a_wait_queue, &newq, sizeof(unsigned int)))

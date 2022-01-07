@@ -12,7 +12,7 @@ SYSCALL_DEFINE1(getContextSwitches,  unsigned int *, number_of_context_switches)
     struct task_struct *task;
     struct rusage ru;
     unsigned int ncsw;
-    task = current
+    task = current;
     //task = find_task_by_vpid(current->pid);
     if (!task) {
         return -ESRCH;
