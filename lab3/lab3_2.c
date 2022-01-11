@@ -11,8 +11,8 @@
 int main()
 {
     char c;
-    int i, t = 2, u = 3, v;
-    unsigned int w;
+    int i=0, t=2, u=3, v=0;
+    unsigned int w=0;
     pid_t pid = getpid();
 
     for (i = 0; i < NUMBER_OF_IO_ITERATIONS; i++)
@@ -24,12 +24,12 @@ int main()
     for (i = 0; i < NUMBER_OF_ITERATIONS; i++)
         v = (++t) * (u++);
 
-    if (syscall(__NR_getContextSwitches, pid, &w) != 0)
+    if (syscall(__NR_getContextSwitches, &w) != 0)
         printf("Error (1)!\n");
     else
         printf("This process encounters %u times context switches.\n", w);
 
-    if (syscall(__NR_getWaitQueue, pid,&w) != 0)
+    if (syscall(__NR_getWaitQueue, pid, &w) != 0)
         printf("Error (2)!\n");
     else
         printf("This process enters a wait queue %u times.\n", w);
@@ -49,12 +49,12 @@ int main()
         printf("I love my home.\n");
     }
 
-    if (syscall(__NR_getContextSwitches, pid, &w) != 0)
+    if (syscall(__NR_getContextSwitches, &w) != 0)
         printf("Error (3)!\n");
     else
         printf("This process encounters %u times context switches.\n", w);
 
-    if (syscall(__NR_getWaitQueue, pid,&w) != 0)
+    if (syscall(__NR_getWaitQueue, pid, &w) != 0)
         printf("Error (4)!\n");
     else
         printf("This process enters a wait queue %u times.\n", w);

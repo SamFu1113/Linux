@@ -15,7 +15,7 @@ int main()
 	for (i = 0; i < NUMBER_OF_ITERATIONS; i++)
 		v = (++t) * (u++);
 
-	if (syscall(__NR_getContextSwitches, pid, &nvcw))
+	if (syscall(__NR_getContextSwitches, &nvcw))
 		printf("Error!\n");
 	else
 		printf("This process encounters %u times context switches.\n", nvcw);
