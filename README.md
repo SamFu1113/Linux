@@ -36,7 +36,9 @@ add
 asmlinkage long sys_newSystemcall(pid_t user_pid, void* __user user_address);
 before ##endif
 
-# vim linux-5.8.1/arch/x86/entry/syscalls/syscall_64.tbl
+```sh
+vim linux-5.8.1/arch/x86/entry/syscalls/syscall_64.tbl
+```
 (ID 440 is for sys_helloworld in my pc)
 441     common  newSystemcall                sys_newSystemcall
 
