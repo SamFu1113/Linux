@@ -19,6 +19,7 @@ the problems which may result by upgrading your kernel.
 
 -------------------------------------------------------------------
 ## In the linux-5.8.1 directory
+
 ```sh
 vim linux-5.8.1/Makefile
 ```
@@ -27,7 +28,10 @@ in line 1073
 (add newSystemcall/)&nbsp;
 kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ newSystemcall/
 
-# vim linux-5.8.1/include/linux/syscalls.h
+```sh
+vim linux-5.8.1/include/linux/syscalls.h
+```
+
 add 
 asmlinkage long sys_newSystemcall(pid_t user_pid, void* __user user_address);
 before ##endif
