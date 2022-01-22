@@ -24,7 +24,7 @@ vim linux-5.8.1/Makefile
 ```
 
 in line 1073
-(add newSystemcall/)
+(add newSystemcall/)&nbsp;
 kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ newSystemcall/
 
 # vim linux-5.8.1/include/linux/syscalls.h
