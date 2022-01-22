@@ -18,8 +18,11 @@ requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
 
 -------------------------------------------------------------------
-In the linux-5.8.1 directory
-# vim linux-5.8.1/Makefile
+## In the linux-5.8.1 directory
+ˋˋˋsh
+vim linux-5.8.1/Makefile
+ˋˋˋ
+
 in line 1073
 (add newSystemcall/)
 kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ newSystemcall/
