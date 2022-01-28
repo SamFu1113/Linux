@@ -39,11 +39,11 @@ before ##endif
 ```sh
 vim linux-5.8.1/arch/x86/entry/syscalls/syscall_64.tbl
 ```
-(ID 440 is for sys_helloworld in my pc)
-441     common  newSystemcall                sys_newSystemcall
+(ID 440 is for sys_helloworld in my pc, 
+441     common  newSystemcall)               sys_newSystemcall
 
 
-My pc nproc is 8.
+The nproc in my pc is 8.
 
 
 "lab1" folder is in the home directory.
