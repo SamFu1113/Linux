@@ -70,8 +70,10 @@ It should show:
 **Anotehr member shows 5.11.0-27-generic.**</br>
 **Below shows the execution process of the member.**</br>
 2. Kernel is stored in ```/usr/src```
-cd /usr/src
-    linux-headers-5.11.0-27-generic
+
+``` sh
+cd /usr/src/linux-headers-5.11.0-27-generic
+```
 
 3、设定system call table
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
