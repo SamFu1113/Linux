@@ -57,17 +57,17 @@ To do work items:
 
 ## Define file
 
-1. Check the kernel version and determine where to add sys call
+1. Check the kernel version and determine where to add sys call.
 ```sh
 uname -r
 ```
-It should show
+It should show:
 
 ```sh
 5.8.1 generic
 ```
 
-**Anotehr member shows 5.11.0-27-generic**
+**Anotehr member shows 5.11.0-27-generic.**
 
 2、kernel保存在/usr/src
 cd /usr/src
