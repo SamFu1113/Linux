@@ -69,7 +69,7 @@ It should show:
 
 **Anotehr member shows 5.11.0-27-generic.**</br>
 **Below shows the execution process of the member.**</br>
-2、kernel保存在/usr/src
+2. Kernel is stored in ```/usr/src```
 cd /usr/src
     linux-headers-5.11.0-27-generic
 
