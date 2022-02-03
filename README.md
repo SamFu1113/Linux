@@ -76,8 +76,8 @@ It should show:
 cd /usr/src/linux-headers-5.11.0-27-generic
 ```
 
-3. Configure the system call table. 
-路徑位置：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
+3. Configure the system call table.  
+Path： ```/usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/```  
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
 
 4、加入 system call文件（我的目录下没有system call文件syscall_table_32.S）
