@@ -84,7 +84,7 @@ cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
 ```
 
 4. Add the system call file.  (There is no system call file ```syscall_table_32.S``` in the directory of the member.)  
-新建sys call文件 
+Therefore, she create a new system call file.
 nano syscall_table_32.S
     .long sys mycall    /* yan add row */
 
