@@ -68,7 +68,7 @@ uname -r
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Anotehr member shows 5.11.0-27-generic.**</br>
-**Below shows the execution process of the member.**</br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Below shows the execution process of the member.**</br>
 
 2. The kernel is stored in ```/usr/src```.
 
