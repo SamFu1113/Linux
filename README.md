@@ -76,7 +76,7 @@ It should show:
 cd /usr/src/linux-headers-5.11.0-27-generic
 ```
 
-3. Configure the system call table
+3. Configure the system call table. 
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
 
