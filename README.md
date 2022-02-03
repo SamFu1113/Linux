@@ -61,13 +61,13 @@ To do work items:
 ```sh
 uname -r
 ```
-It should show:
+&nbsp;&nbsp;&nbsp;&nbsp;It should show:
 
 ```sh
 5.8.1 generic
 ```
 
-**Anotehr member shows 5.11.0-27-generic.**</br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Anotehr member shows 5.11.0-27-generic.**</br>
 **Below shows the execution process of the member.**</br>
 
 2. The kernel is stored in ```/usr/src```.
