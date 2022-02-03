@@ -78,7 +78,10 @@ cd /usr/src/linux-headers-5.11.0-27-generic
 
 3. Configure the system call table.  
 Path： ```/usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/```  
+
+```sh
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/kernel/
+```
 
 4、加入 system call文件（我的目录下没有system call文件syscall_table_32.S）
 新建sys call文件 
