@@ -98,7 +98,7 @@ cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/
 nano unistd.h
 ```
 
-***Explanation***: 在unistd.h這個檔案中，增加system call number，
+***Explanation***: In the file ```unistd.h```, add the number of system call, 
 也就是增加#define __NR_mycall，並定義為第333個system call number，
     在代码是中是__NR_syscall_max + 1
 增加完敘述後再順便增加#define NR_syscalls     334，
