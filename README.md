@@ -94,7 +94,9 @@ Path：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/unistd.h
 ```sh
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/
 ```
+```sh
 nano unistd.h
+```
 
 解释：在unistd.h這個檔案中，增加system call number，
 也就是增加#define __NR_mycall，並定義為第333個system call number，
