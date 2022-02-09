@@ -90,7 +90,7 @@ nano syscall_table_32.S
 
 5. Define new system call 
 Path：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/unistd.h
-（Difference from kernel-2.6.28: 没有unistd_32.h文件，文件更名：unistd.h ）
+（Difference from kernel-2.6.28:  there is no a file named ```unistd_32.h file```,文件更名：unistd.h ）
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/
 nano unistd.h
 
