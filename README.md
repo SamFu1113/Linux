@@ -99,7 +99,7 @@ nano unistd.h
 ```
 
 ***Explanation***: In the file ```unistd.h```, add the number of system call, 
-that is to add ```#define __NR_mycall```，並定義為第333個system call number，
+that is to add ```#define __NR_mycall```, and it is defined as the 333rd system call number，
     在代码是中是__NR_syscall_max + 1
 增加完敘述後再順便增加#define NR_syscalls     334，
     在代码是中是__NR_syscall_max + 2
