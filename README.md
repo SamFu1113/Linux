@@ -88,7 +88,7 @@ Therefore, she create a new system call file.
 nano syscall_table_32.S
     .long sys mycall    /* yan add row */
 
-5、增加sys call 定义
+5. Define new system call 
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/unistd.h
 （与kernel-2.6.28区别：没有unistd_32.h文件，文件更名：unistd.h ）
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/
