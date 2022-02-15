@@ -105,8 +105,8 @@ This line of description allows system call number to provide upper and lower bo
 
 
 6. Define the function prototype of the system call
-Path: ```/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/syscalls.h```
-新增asmlinkage int sys_mycall(void);的函式原型
+Path: ```/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/syscalls.h```.  
+Next, she added function prototype of ```asmlinkage int sys_mycall(void);```
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/
 nano syscalls.h
     asmlinkage int sys_mycall(void);
