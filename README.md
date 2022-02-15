@@ -104,7 +104,7 @@ After adding the description, add ```#define NR_syscalls 334``` by the way, it i
 This line of description allows system call number to provide upper and lower bounds.
 
 
-6、定义system call的函式原型
+6. Define the function prototype of the system call
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/syscalls.h
 新增asmlinkage int sys_mycall(void);的函式原型
 cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/
