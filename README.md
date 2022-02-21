@@ -113,7 +113,7 @@ Afterwards, add ```asmlinkage int sys_mycall(void);```
 
 7. Add the main code of system call  
 Path: ```/usr/src/linux-headers-5.11.0-27-generic/kernel/```  
-```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```
+```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```  
 這邊的目的就是撰寫新增的system call的程式碼，
 注意新增的程式碼檔名得要跟system call的名稱一樣，
 像在這邊就得要新增一個名為mycall.c的檔案，
