@@ -109,7 +109,7 @@ Path: ```/usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/syscalls.
 Next, she added function prototype of ```asmlinkage int sys_mycall(void);```  
 ```cd /usr/src/linux-headers-5.11.0-27-generic/arch/x86/include/asm/```  
 ```nano syscalls.h```
-Add asmlinkage int sys_mycall(void);
+Add ```asmlinkage int sys_mycall(void);```
 
 7. Add the main code of system call
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/kernel/
