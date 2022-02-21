@@ -111,7 +111,7 @@ Next, she added function prototype of ```asmlinkage int sys_mycall(void);```
 Next, ```nano syscalls.h```  
 Afterwards, add ```asmlinkage int sys_mycall(void);```  
 
-7. Add the main code of system call
+7. Add the main code of system call  
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/kernel/
 cd /usr/src/linux-headers-5.11.0-27-generic/kernel/
 這邊的目的就是撰寫新增的system call的程式碼，
