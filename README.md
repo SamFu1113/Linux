@@ -114,8 +114,7 @@ Afterwards, add ```asmlinkage int sys_mycall(void);```
 7. Add the main code of system call  
 Path: ```/usr/src/linux-headers-5.11.0-27-generic/kernel/```  
 ```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```  
-The purpose here is to write the code for the new system call.  
-Note that the name of the newly added code file must be the same as the name of the system call.
+The purpose here is to write the code for the new system call. Note that the name of the newly added code file must be the same as the name of the system call.
 For example, here you have to add a file named ```mycall.c```. Otherwise, the os can't find the correct system call correspondence.  
 ```nano mycall.c```
 
