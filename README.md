@@ -120,7 +120,7 @@ For example, here you have to add a file named ```mycall.c```. Otherwise, the os
 
 8. Makefile configuration  
 Path:```/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile```  
-```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```
+```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```  
 在obj-y後面新增自己新增要編譯的檔， 變數 obj-y 表示需要編繹到內核中的目標檔案名集合，如下範例新增mycall.o
 nano Makefile
     
