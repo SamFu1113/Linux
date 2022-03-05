@@ -118,7 +118,7 @@ The purpose here is to write the code for the new system call. Note that the nam
 For example, here you have to add a file named ```mycall.c```. Otherwise, the os can't find the correct system call correspondence.  
 ```nano mycall.c```
 
-8、Makefile的設定
+8. Makefile configuration
 路徑位置：/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile
 cd /usr/src/linux-headers-5.11.0-27-generic/kernel/
 在obj-y後面新增自己新增要編譯的檔， 變數 obj-y 表示需要編繹到內核中的目標檔案名集合，如下範例新增mycall.o
