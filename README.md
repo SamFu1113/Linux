@@ -123,7 +123,7 @@ Path:```/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile```
 ```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```  
 #
 Add your own new file to be compiled after ```obj-y```.  The variable ```obj-y``` represents the set of target file names that need to be compiled into the kernel, and the following example adds ```mycall.o```.  
-nano Makefile
+To finish the action, nano Makefile
     
 ## 编译文件
 位置：/usr/src/linux-headers-5.11.0-27-generic/
