@@ -121,7 +121,7 @@ For example, here you have to add a file named ```mycall.c```. Otherwise, the os
 8. Makefile configuration  
 Path:```/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile```  
 ```cd /usr/src/linux-headers-5.11.0-27-generic/kernel/```  
----------
+
 Add your own new file to be compiled after ```obj-y```.  The variable ```obj-y``` represents the set of target file names that need to be compiled into the kernel, and the following example adds ```mycall.o```.  
 To finish the action, do the following action:  ```nano Makefile```
     
