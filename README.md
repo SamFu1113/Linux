@@ -125,7 +125,7 @@ Path:```/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add your own new file to be compiled after ```obj-y```.  The variable ```obj-y``` represents the set of target file names that need to be compiled into the kernel, and the following example adds ```mycall.o```.  
 &nbsp;&nbsp;&nbsp;&nbsp;To finish the action, do the following action:  ```nano Makefile```
     
-## 编译文件
+## Compile
 位置：/usr/src/linux-headers-5.11.0-27-generic/
 cd /usr/src/linux-headers-5.11.0-27-generic/
 1、删除中间档案
