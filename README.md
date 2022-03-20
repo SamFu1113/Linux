@@ -130,7 +130,7 @@ Path: ```/usr/src/linux-headers-5.11.0-27-generic/```
 ```cd /usr/src/linux-headers-5.11.0-27-generic/```  
 1. Delete intermediate files  
 ```make mrproper```  
-make clean
+```make clean```
 
 2、通过使用menuconfig
 我的电脑缺少组件：
