@@ -128,7 +128,7 @@ Path:```/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile```
 ## Compile
 Path: ```/usr/src/linux-headers-5.11.0-27-generic/```  
 ```cd /usr/src/linux-headers-5.11.0-27-generic/```  
-1. Delete intermediate files
+1. Delete intermediate files  
 make mrproper
 make clean
 
