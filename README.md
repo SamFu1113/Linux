@@ -126,7 +126,7 @@ Path:```/usr/src/linux-headers-5.11.0-27-generic/kernel/Makefile```
 &nbsp;&nbsp;&nbsp;&nbsp;To finish the action, do the following action:  ```nano Makefile```
     
 ## Compile
-Path: /usr/src/linux-headers-5.11.0-27-generic/  
+Path: ```/usr/src/linux-headers-5.11.0-27-generic/```  
 cd /usr/src/linux-headers-5.11.0-27-generic/
 1、删除中间档案
 make mrproper
