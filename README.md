@@ -137,4 +137,4 @@ My computer is missing the components:
 ```sudo apt-get install flex```  
 ```apt-get install bison -y```  
 Start up command: ```make menuconfig```  
-Get stuck.
+Get stuck.  
