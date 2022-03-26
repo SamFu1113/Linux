@@ -136,5 +136,5 @@ Path: ```/usr/src/linux-headers-5.11.0-27-generic/```
 My computer is missing the components:  
 ```sudo apt-get install flex```  
 ```apt-get install bison -y```  
-Start up command: ```make menuconfig```
+Start up command: ```make menuconfig```  
 卡住了~
