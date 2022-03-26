@@ -132,7 +132,7 @@ Path: ```/usr/src/linux-headers-5.11.0-27-generic/```
 ```make mrproper```  
 ```make clean```  
 
-2、通过使用menuconfig
+2. By using menuconfig
 我的电脑缺少组件：
 sudo apt-get install flex
 apt-get install bison -y
