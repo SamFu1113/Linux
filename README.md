@@ -133,7 +133,7 @@ Path: ```/usr/src/linux-headers-5.11.0-27-generic/```
 ```make clean```  
 
 2. By using menuconfig  
-My computer is missing the components:
+My computer is missing the components:  
 sudo apt-get install flex
 apt-get install bison -y
 启动： make menuconfig
