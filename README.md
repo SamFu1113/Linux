@@ -140,4 +140,4 @@ Start up command: ```make menuconfig```
 Get stuck. Afterwards, I did it on my own under Linux kernel-5.8.1. And there are serval probelms we encountered. They are described below.
 --------
 Discussed issues are below:
-&nbsp&nbsp;&nbsp;&nbsp;;asmlinkage: When the system call handler wants to call the corresponding system call routine,
+&nbsp&nbsp;&nbsp;&nbsp;asmlinkage: When the system call handler wants to call the corresponding system call routine,
