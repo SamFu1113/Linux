@@ -139,3 +139,4 @@ My computer is missing the components:
 Start up command: ```make menuconfig```  
 Get stuck.  
 --------
+Discussed issues are below:
