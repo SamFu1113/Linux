@@ -138,3 +138,4 @@ My computer is missing the components:
 ```apt-get install bison -y```  
 Start up command: ```make menuconfig```  
 Get stuck.  
+--------
