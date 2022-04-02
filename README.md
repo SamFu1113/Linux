@@ -137,6 +137,6 @@ My computer is missing the components:
 ```sudo apt-get install flex```  
 ```apt-get install bison -y```  
 Start up command: ```make menuconfig```  
-Get stuck. Afterwards, I did it on my own under Linux kernel-5.8.1
+Get stuck. Afterwards, I did it on my own under Linux kernel-5.8.1. And there are serval probelms we encountered.
 --------
 Discussed issues are below:
