@@ -140,7 +140,7 @@ Start up command: ```make menuconfig```
 Get stuck. Afterwards, I did it on my own under Linux kernel-5.8.1. And there are serval probelms we encountered. They are described below.
 --------
 Discussed issues are below:
-&nbsp&nbsp;&nbsp;&nbsp;What is ```asmlinkage```? When the system call handler wants to call the corresponding system call routine, it pushes the value of the general-purpose scratchpad onto the stack. Therefore, the system call routine has to use the stack to read the parameters passed by the system call handler. Then, that's what the ```asmlinkage``` tag is for. After adding ```asmlinkage```, C function will take parameters from stack instead of taking parameters from register.  
+&nbsp;&nbsp;&nbsp;&nbsp;What is ```asmlinkage```? When the system call handler wants to call the corresponding system call routine, it pushes the value of the general-purpose scratchpad onto the stack. Therefore, the system call routine has to use the stack to read the parameters passed by the system call handler. Then, that's what the ```asmlinkage``` tag is for. After adding ```asmlinkage```, C function will take parameters from stack instead of taking parameters from register.  
 ```#define asmlinkage CPP_ASMLINKAGE_attribute_((regparm(0)))```  
 - **regparm(0)** means not to pass parameters from registers.  
 &nbsp;&nbsp;&nbsp;&nbsp;SYSCALL_DEFINEx：
