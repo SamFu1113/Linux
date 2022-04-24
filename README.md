@@ -144,3 +144,4 @@ Get stuck. Afterwards, I did it on my own under Linux kernel-5.8.1. And there ar
 ```#define asmlinkage CPP_ASMLINKAGE_attribute_((regparm(0)))```  
 - **regparm(0)** means not to pass parameters from registers.  
 &nbsp;&nbsp;&nbsp;&nbsp;SYSCALL_DEFINEx：  
+ __VA_ARGS__ keyword,
