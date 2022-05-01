@@ -145,3 +145,4 @@ Get stuck. Afterwards, I did it on my own under Linux kernel-5.8.1. And there ar
 - **regparm(0)** means not to pass parameters from registers.  
 &nbsp;&nbsp;&nbsp;&nbsp;What is ```SYSCALL_DEFINEx```?
 - __VA_ARGS__ keyword, used to support defining variable number of parameters.  
+After entering SYSCALL_DEFINEx, there are two functions in it
